@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   * {
     margin: 0;
     padding: 0;
@@ -68,5 +68,41 @@
 
   #nav-menu a .items-menu h5 {
     font-size: 16px;
+  }
+
+  footer {
+    width: 100%;
+    height: 250px;
+    background-color: #004161;
+  }
+
+  footer .footer-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  footer .footer-information img {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+  }
+
+  footer .footer-information h5 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+
+  .footer-information .icon-social {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+  }
+
+  .footer-information .icon-social img {
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(2px 4px 6px black);
   }
 }
