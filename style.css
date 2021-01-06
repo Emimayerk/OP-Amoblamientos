@@ -1,0 +1,41 @@
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  header {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  #logo-principal {
+    width: 50px;
+    height: 75px;
+  }
+
+  #logo-principal img {
+    width: 50px;
+    height: 75px;
+  }
+
+  #redes-sociales {
+    display: flex;
+  }
+
+  #redes-sociales .icon-social {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+
+  #redes-sociales .icon-social img {
+    width: 20px;
+    height: 20px;
+  }
+}
