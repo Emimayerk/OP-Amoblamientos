@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OP Amoblamientos</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <script src="main.js"></script>
 </head>
+
 <body>
-    <nav id="nav-menu">
-        <a href="">
-            <div class="items-menu">
-                <img src="img/empresa-mobile.png" alt="">
-                <h5>Empresa</h5>
-            </div>
-        </a>
-        <a href="">
-            <div class="items-menu">
-                <img src="img/productos-mobile.png" alt="">
-                <h5>Productos</h5>
-            </div>
-        </a>
-        <a href="">
-            <div class="items-menu">
-                <img src="img/contacto-mobile.png" alt="">
-                <h5>Contacto</h5>
-            </div>
-        </a>
-    </nav>
     <header>
         <figure id="logo-principal">
-           <a href="#"><img src="img/Presentación Digital OP_page-0001.jpg" alt=""></a>
+            <a href="#"><img src="img/Presentación Digital OP_page-0001.jpg" alt=""></a>
         </figure>
+        <nav id="nav-menu">
+            <a href="#about-us">
+                <div class="items-menu">
+                    <img src="img/empresa-mobile.png" alt="">
+                    <h5>Empresa</h5>
+                </div>
+            </a>
+            <a href="">
+                <div class="items-menu">
+                    <img src="img/productos-mobile.png" alt="">
+                    <h5>Productos</h5>
+                </div>
+            </a>
+            <a href="">
+                <div class="items-menu">
+                    <img src="img/contacto-mobile.png" alt="">
+                    <h5>Contacto</h5>
+                </div>
+            </a>
+        </nav>
         <div id="redes-sociales">
             <figure class="icon-social">
                 <a href="#"><img src="img/fb.png" alt=""></a>
-             </figure>
-             <figure class="icon-social">
+            </figure>
+            <figure class="icon-social">
                 <a href="#"><img src="img/i.png" alt=""></a>
-             </figure>
-             <figure class="icon-social">
+            </figure>
+            <figure class="icon-social">
                 <a href="#"><img src="img/tw.png" alt=""></a>
-             </figure>
+            </figure>
         </div>
     </header>
     <main>
+        <slider-app width="100" height="300" iconNext=">" iconBack="<">
+            <slide-app title="" description="" image="img/Presentación Digital OP_page-0003.jpg" bgColor="red"
+                active=true>
+            </slide-app>
+            <slide-app title="" description="" image="img/Presentación Digital OP_page-0004.jpg" bgColor="blue"
+                active="false">
+            </slide-app>
+            <slide-app title="" description="" image="img/Presentación Digital OP_page-0005.jpg" bgColor="green"
+                active="false">
+            </slide-app>
+        </slider-app>
         <section id="profesionales-asociados">
             <h2>Profesionales asociados</h2>
             <div class="logos-asociados">
@@ -77,10 +88,13 @@
         </section>
         <section id="about-us">
             <h2>Nosotros</h2>
-            <p>Somos una empresa familiar creada en el 2004 dedicada al diseño, fabricación e instalación de amoblamientos integrales a medida para el hogar.
+            <p>Somos una empresa familiar creada en el 2004 dedicada al diseño, fabricación e instalación de
+                amoblamientos integrales a medida para el hogar.
                 Excelente relación calidad precio con atención personalizada.
                 Trabajamos con particulares y empresas constructoras brindando asesoramiento y presupuestos sin cargo.
-                Nuestros proyectos forman parte de hogares en muchas de las casas y departamentos de edificios prestigiosos de la ciudad en trabajos realizados en concordancia con Arquitectos e Ingenieros asociados a nuestra empresa.</p>
+                Nuestros proyectos forman parte de hogares en muchas de las casas y departamentos de edificios
+                prestigiosos de la ciudad en trabajos realizados en concordancia con Arquitectos e Ingenieros asociados
+                a nuestra empresa.</p>
         </section>
         <section>
             <h2>Hablemos</h2>
@@ -118,6 +132,9 @@
             </div>
         </footer>
     </main>
-    
+
+    <script src="main.js"></script>
+    <script type="module" src="./slider-complete/src/index.js"></script>
 </body>
+
 </html>
