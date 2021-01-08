@@ -47,6 +47,10 @@ class Slide extends HTMLElement {
                 background-position: center;
                 background-repeat: no-repeat;
                 display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
             }
 
             .content-wrap {
@@ -66,7 +70,6 @@ class Slide extends HTMLElement {
     setContent = () => {
         this.slide = document.createElement('article');
         this.slide.classList.add('slide');
-        this.isActive();
         const template = `
             <div class="content-wrap">
                 <h2 class="slide-title">${this.content.title}</h2>
@@ -74,25 +77,25 @@ class Slide extends HTMLElement {
             </div>
         `;
         this.slide.innerHTML = template;
+        this.isActive();
         this.dom.appendChild(this.slide);
     };
 
     isActive = () => {
-        const active = this.getAttribute('active')
+        const active = this.getAttribute('active');
+        const direction = this.getAttribute('direction');
         if (active === 'true') {
             this.slide.classList.add('active');
             this.slide.animate([
                 // keyframes
-                { transform: 'translateX(100%)' },
-                { transform: 'translateX(0)' },
+                { transform: `${direction === "left" ? 'translateX(-100%)' : 'translateX(100%)'}` },
+                { transform: `translateX(0)` },
               ], {
                 // timing options
                 duration: 600,
                 iterations: 1,
               });
-        } else {
-            this.slide.classList.remove('active');
-        };
+        }
     };
 
     render = () => {

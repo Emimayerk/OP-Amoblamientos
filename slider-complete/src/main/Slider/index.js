@@ -45,6 +45,7 @@ class Slider extends HTMLElement {
 
             #slides-wrap {
                 width: 100%;
+                position: relative;
             }
 
             .btn {
@@ -105,6 +106,7 @@ class Slider extends HTMLElement {
             child.setAttribute('active', 'false');
         });
         this.currentSlide = this.currentSlide === 0 ? this.slidesCount : this.currentSlide - 1;
+        this.children[this.currentSlide].setAttribute('direction', 'left');
         this.children[this.currentSlide].setAttribute('active', 'true');
     };
 
@@ -113,6 +115,7 @@ class Slider extends HTMLElement {
             child.setAttribute('active', 'false');
         });
         this.currentSlide = this.currentSlide === this.slidesCount ? 0 : this.currentSlide + 1;
+        this.children[this.currentSlide].setAttribute('direction', 'right');
         this.children[this.currentSlide].setAttribute('active', 'true');
     };
 
