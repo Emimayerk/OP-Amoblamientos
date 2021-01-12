@@ -267,7 +267,7 @@ footer .footer-information h5 {
   }
 
   #nav-menu {
-    position: absolute;
+    position: relative;
     background-color: transparent;
     justify-content: center;
     padding: 0;
