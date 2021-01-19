@@ -78,8 +78,8 @@ header {
 }
 
 #nav-menu a .items-menu img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 #nav-menu a .items-menu h5 {
@@ -137,6 +137,7 @@ header {
   color: rgba(255, 255, 255, 0.9);
   text-align: left;
   font-size: 16px;
+  font-weight: 100;
   width: 80%;
   margin: 0 auto;
   padding: 0 0 3rem 0;
@@ -171,7 +172,7 @@ input.text {
   width: 80%;
   height: 35px;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.9);
   padding: 5px 10px;
   font-size: 16px;
   margin-bottom: 10px;
@@ -179,7 +180,7 @@ input.text {
 
 textarea {
   border-radius: 5px;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255, 0.9);
   padding: 5px 10px;
   font-size: 16px;
   min-width: 80%;
@@ -187,6 +188,7 @@ textarea {
   max-height: 180px;
   min-height: 150px;
   font-family: "Open Sans", sans-serif;
+  font-weight: 100;
 }
 
 input#button {
@@ -299,6 +301,12 @@ footer .footer-information h5 {
     height: 150px;
     border-radius: 100px;
     margin: 1rem;
+  }
+
+  /* FORMULARIO */
+
+  form {
+    width: 60%;
   }
 
   /*FOOTER*/
