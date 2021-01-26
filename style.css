@@ -175,6 +175,7 @@ input.text {
   height: 35px;
   border-radius: 5px;
   background-color: rgb(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
   padding: 5px 10px;
   font-size: 16px;
   margin-bottom: 10px;
@@ -184,9 +185,9 @@ input.text {
 textarea {
   border-radius: 5px;
   background-color: rgb(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
   padding: 5px 10px;
   font-size: 16px;
-  font-weight: 300;
   min-width: 80%;
   max-width: 80%;
   max-height: 180px;
@@ -197,7 +198,6 @@ textarea {
 input#button {
   text-align: center;
   font-size: 16px;
-  font-weight: 300;
   background-color: rgb(255, 255, 255, 0.9);
   color: rgba(0, 0, 0, 0.9);
   border-radius: 50px;
