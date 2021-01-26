@@ -178,6 +178,7 @@ input.text {
   padding: 5px 10px;
   font-size: 16px;
   margin-bottom: 10px;
+  font-family: "YanoneKaffeesatz-Regular";
 }
 
 textarea {
@@ -190,6 +191,7 @@ textarea {
   max-width: 80%;
   max-height: 180px;
   min-height: 150px;
+  font-family: "YanoneKaffeesatz-Regular";
 }
 
 input#button {
@@ -203,6 +205,7 @@ input#button {
   width: 80%;
   height: 35px;
   cursor: pointer;
+  font-family: "YanoneKaffeesatz-Regular";
 }
 
 /*FOOTER*/
