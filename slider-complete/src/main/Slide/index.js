@@ -63,6 +63,22 @@ class Slide extends HTMLElement {
             .slide.active {
                 display: flex;
             }
+
+            h2.slide-title {
+                border: 1px solid white;
+                background: #ffffff6b;
+                padding: 0.5rem;
+                border-radius: 50px;
+                font-size: 25px;
+                font-weight: 100;
+                color: rgb(0 0 0 / 71%);
+              }
+
+              h2.slide-title:hover {
+                  background: white;
+                  transition: 500ms;
+                  cursor: pointer;
+              }
         `;
         this.dom.appendChild(style);
     };

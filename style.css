@@ -330,6 +330,11 @@ footer .footer-information h5 {
   footer .footer-information h5 {
     margin: 0;
   }
+
+  /* SLIDE TITLE*/
+
+  h2.slide-title {
+  }
 }
 
 /*
