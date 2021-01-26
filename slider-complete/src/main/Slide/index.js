@@ -66,11 +66,11 @@ class Slide extends HTMLElement {
 
             h2.slide-title {
                 border: 1px solid white;
-                background: #ffffff6b;
-                padding: 0.5rem;
+                background: #ffffff96;
+                padding: 0.5rem 1rem;
                 border-radius: 50px;
-                font-size: 25px;
-                font-weight: 100;
+                font-size: 20px;
+                font-weight: 400;
                 color: rgb(0 0 0 / 71%);
               }
 
