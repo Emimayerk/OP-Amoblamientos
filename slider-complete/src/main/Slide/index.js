@@ -66,16 +66,16 @@ class Slide extends HTMLElement {
 
             h2.slide-title {
                 border: 1px solid white;
-                background: #ffffff96;
+                background:  #004161a8;
                 padding: 0.5rem 1rem;
                 border-radius: 50px;
                 font-size: 20px;
                 font-weight: 400;
-                color: rgb(0 0 0 / 71%);
+                color: rgb(255 255 255 / 71%);
               }
 
               h2.slide-title:hover {
-                  background: white;
+                  background: #004161;
                   transition: 500ms;
                   cursor: pointer;
               }
