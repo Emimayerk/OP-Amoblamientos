@@ -51,6 +51,7 @@ class Slide extends HTMLElement {
                 top: 0;
                 left: 0;
                 z-index: 1;
+                
             }
 
             .content-wrap {
@@ -67,11 +68,14 @@ class Slide extends HTMLElement {
             h2.slide-title {
                 border: 1px solid white;
                 background:  #004161a8;
-                padding: 0.5rem 1rem;
                 border-radius: 50px;
-                font-size: 20px;
-                font-weight: 400;
                 color: rgb(255 255 255 / 71%);
+                border: 1px solid white;
+                padding: .5rem 3rem;
+                font-size: 1.6rem;
+                font-weight: 300;
+                margin-top: 18rem;
+                text-transform: uppercase;
               }
 
               h2.slide-title:hover {

@@ -229,7 +229,11 @@ footer .footer-information {
 footer .footer-information img {
   height: 25px;
   width: 25px;
-  margin: 1.5rem 0.2rem 0 0;
+  margin: 1.5rem 1rem 0 0;
+}
+
+footer .footer-information a {
+  text-decoration: none;
 }
 
 footer .footer-information h5 {
@@ -248,6 +252,7 @@ footer .footer-information h5 {
 .footer-information .icon-social img {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 /*FIN DEL FOOTER*/
@@ -331,7 +336,7 @@ footer .footer-information h5 {
   }
 
   #nav-menu a .items-menu h5 {
-    font-weight: 100;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
@@ -370,9 +375,15 @@ footer .footer-information h5 {
   footer .footer-information img {
     margin: 0 0.2rem 0 0;
     padding: 0;
+    cursor: pointer;
   }
 
   footer .footer-information h5 {
     margin: 0;
+  }
+
+  .gallery a {
+    width: 18rem;
+    margin: 0.5rem 1rem;
   }
 }
