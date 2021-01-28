@@ -328,6 +328,7 @@ footer .footer-information h5 {
     justify-content: center;
     padding: 0;
     align-items: center;
+    margin-left: 5rem;
   }
 
   #nav-menu a {
