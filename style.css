@@ -114,8 +114,8 @@ header {
 figure.logo-asociado {
   margin: 0 0.5rem 1rem;
   overflow: hidden;
-  width: 15%;
-  height: 15%;
+  width: 10%;
+  height: 10%;
   border-radius: 8rem;
 }
 
@@ -162,6 +162,7 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 3rem;
+  font-family: "Lato", sans-serif;
 }
 
 h2 {
@@ -177,25 +178,27 @@ input.text {
   width: 80%;
   height: 35px;
   border-radius: 5px;
+  border: none;
   background-color: rgb(255, 255, 255, 0.9);
   color: rgba(0, 0, 0, 0.9);
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   font-size: 16px;
   margin-bottom: 10px;
-  font-family: "YanoneKaffeesatz-Regular";
+  font-family: "Lato", sans-serif;
 }
 
 textarea {
   border-radius: 5px;
+  border: none;
   background-color: rgb(255, 255, 255, 0.9);
   color: rgba(0, 0, 0, 0.9);
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   font-size: 16px;
   min-width: 80%;
   max-width: 80%;
   max-height: 180px;
   min-height: 150px;
-  font-family: "YanoneKaffeesatz-Regular";
+  font-family: "Lato", sans-serif;
 }
 
 input#button {
@@ -204,11 +207,12 @@ input#button {
   background-color: rgb(255, 255, 255, 0.9);
   color: rgba(0, 0, 0, 0.9);
   border-radius: 50px;
+  border: none;
   margin-top: 1.5rem;
-  width: 80%;
-  height: 35px;
+  width: 50%;
+  padding: 0.5rem;
   cursor: pointer;
-  font-family: "YanoneKaffeesatz-Regular";
+  font-family: "Lato", sans-serif;
 }
 
 /*FOOTER*/
@@ -349,6 +353,11 @@ footer .footer-information h5 {
 
   .logos-asociados-wrapper {
     justify-content: space-evenly;
+  }
+
+  figure.logo-asociado {
+    width: 7%;
+    height: 7%;
   }
 
   /* FORMULARIO */
