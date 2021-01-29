@@ -116,7 +116,6 @@ figure.logo-asociado {
   overflow: hidden;
   width: 10%;
   height: 10%;
-  border-radius: 8rem;
 }
 
 figure.logo-asociado img {
@@ -358,6 +357,11 @@ footer .footer-information h5 {
   figure.logo-asociado {
     width: 7%;
     height: 7%;
+  }
+
+  .logos-asociados-wrapper {
+    width: 90%;
+    margin: 0 auto;
   }
 
   /* FORMULARIO */
