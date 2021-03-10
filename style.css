@@ -362,6 +362,25 @@ article.slide .data-content p {
 
 /* FIN SLIDER */
 
+/* WHATSAPP */
+
+#whatsapp-phone {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+#whatsapp-phone figure {
+  width: 3rem;
+  height: 3rem;
+}
+
+#whatsapp-phone figure img {
+  width: 100%;
+}
+
+/* FIN WHATSAPP */
+
 @media only screen and (min-device-width: 1025px) and (max-device-width: 5000px) {
   body {
     background-color: rgb(255, 255, 255);
