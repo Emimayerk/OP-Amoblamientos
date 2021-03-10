@@ -260,46 +260,94 @@ footer .footer-information h5 {
 /*FIN DEL FOOTER*/
 
 /*
-  KITCHEN GALLERY
+    SLIDER
 */
 
-#cocinas,
-#placards,
-#livings,
-#vestidores {
-  display: none;
-  position: fixed;
-  z-index: 9;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.95);
-}
-
-.gallery {
-  display: flex;
-  padding: 1rem;
+section#slider {
+  height: 100vh;
   box-sizing: border-box;
-  flex-wrap: wrap;
+  overflow: hidden;
   width: 100%;
+}
+.slides-wrap {
+  display: flex;
   height: 100%;
-  align-content: flex-start;
-  justify-content: space-around;
 }
-
-.gallery a {
-  width: 6rem;
-  margin-bottom: 1rem;
+@keyframes moveToRight {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
 }
-
-.gallery a figure {
+.moveToRight {
+  animation: moveToRight 0.6s ease-in-out;
+}
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+.moveToLeft {
+  animation: moveToLeft 0.6s ease-in-out;
+}
+article.slide {
+  height: 100%;
+  box-sizing: border-box;
   margin: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* transition: all 3s ease-in-out; */
+}
+div#btn-prev {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 33px;
+  left: 20px;
+
+  cursor: pointer;
+  background: url(img/chevron-left.png);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.26s ease-in-out;
+}
+div#btn-next {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 33px;
+  right: 20px;
+  cursor: pointer;
+  background: url(img/chevron-right.png);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.26s ease-in-out;
+}
+.slide-info {
+  transform: translateX(34vh);
+  /* position: relative; */
+  text-align: left;
+}
+article.slide h2 {
+  font-size: 2.5em;
+  color: rgba(256, 256, 256, 1);
+  margin: 0 auto;
+}
+article.slide p {
+  color: rgba(256, 256, 256, 1);
+  margin: 2vh 0 3vh 0;
 }
 
-.gallery a figure img {
-  width: 100%;
-  height: auto;
-}
+/* FIN SLIDER */
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 5000px) {
   body {
