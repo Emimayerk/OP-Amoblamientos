@@ -320,11 +320,10 @@ article.slide {
 div#btn-prev {
   position: absolute;
   top: 45%;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   line-height: 33px;
   left: 20px;
-
   cursor: pointer;
   background: url(img/chevron-left.png);
   background-size: cover;
@@ -334,8 +333,8 @@ div#btn-prev {
 div#btn-next {
   position: absolute;
   top: 45%;
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   line-height: 33px;
   right: 20px;
   cursor: pointer;
