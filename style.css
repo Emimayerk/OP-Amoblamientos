@@ -319,7 +319,7 @@ article.slide {
 }
 div#btn-prev {
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: 25px;
   height: 25px;
   line-height: 33px;
@@ -332,7 +332,7 @@ div#btn-prev {
 }
 div#btn-next {
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: 25px;
   height: 25px;
   line-height: 33px;
