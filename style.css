@@ -143,12 +143,12 @@ div#about-us-wrapper {
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 100;
-  color: gray;
+  color: rgb(97, 97, 97);
   padding: 2rem;
 }
 
 div#about-us-data {
-  background: gray;
+  background: rgb(97, 97, 97);
 }
 
 #about-us p {
