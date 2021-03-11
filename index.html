@@ -235,11 +235,11 @@
         <section>
             <h2 id="form">Contactanos para optimizar tu espacio</h2>
             <form action="">
-                <input class="text" type="text" name="Nombre" placeholder="Ingrese su nombre">
-                <input class="text" type="text" name="Celular" placeholder="Ingrese su celular">
-                <input class="text" type="text" name="Email" placeholder="Ingrese su email">
-                <textarea name="Mensaje" placeholder="Ingrese su mensaje"></textarea>
-                <input type="button" value="ENVIAR" id="button">
+                <input class="text" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre">
+                <input class="text" type="text" name="Celular" id="Celular" placeholder="Ingrese su celular">
+                <input class="text" type="text" name="Email" id="Email" placeholder="Ingrese su email">
+                <textarea name="Mensaje" id="Mensaje" placeholder="Ingrese su mensaje"></textarea>
+                <input type="button" value="ENVIAR" id="button" onclick="sendMail()">
             </form>
         </section>
         <footer>
@@ -279,9 +279,17 @@
     </main>
 
 
-
     <script src="main.js"></script>
 
+    <script>
+        function sendMail() {
+            let name = document.getElementById("Nombre").value;
+            let phone = document.getElementById("Celular").value;
+            let email = document.getElementById("Email").value;
+            let message = document.getElementById("Mensaje").value;
+            window.open("mailto:ventas@opamoblamientos.com?subjet" + name + "ha realizado una consulta desde OP Amoblamientos" + "&body=%0D%0A Mensaje" + message + "%0D%0A Teléfono" + phone + "%0D%0A" + email);
+        };
+    </script>
 </body>
 
 </html>
