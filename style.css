@@ -88,6 +88,16 @@ header {
   text-transform: uppercase;
 }
 
+/* HOME FOTO PRINCIPAL */
+
+#home-principal {
+  width: 100%;
+  height: 90vh;
+  background: url(img/home-principal.webp);
+  background-position: center;
+  background-size: cover;
+}
+
 /* PROFESIONALES ASOCIADOS */
 
 #profesionales-asociados {
@@ -286,6 +296,7 @@ section#slider {
   display: flex;
   height: 100%;
 }
+
 @keyframes moveToRight {
   0% {
     transform: translateX(0vw);
@@ -319,7 +330,7 @@ article.slide {
 }
 div#btn-prev {
   position: absolute;
-  top: 50%;
+  top: 155%;
   width: 25px;
   height: 25px;
   line-height: 33px;
@@ -332,7 +343,7 @@ div#btn-prev {
 }
 div#btn-next {
   position: absolute;
-  top: 50%;
+  top: 155%;
   width: 25px;
   height: 25px;
   line-height: 33px;
@@ -347,7 +358,7 @@ div#btn-next {
 .slide-info {
   width: 80%;
   border: 1rem solid white;
-  display: flex;
+  display: none;
   height: 80%;
   flex-direction: column;
   margin-bottom: 2rem;
@@ -356,6 +367,7 @@ div#btn-next {
 
 .data-content {
   background: white;
+  display: none;
 }
 
 article.slide .data-content h2 {
@@ -370,6 +382,34 @@ article.slide .data-content h2 {
 article.slide .data-content p {
   color: rgba(0, 0, 0, 0.7);
   margin: 0;
+}
+
+#product-one {
+  background: url("jpg-products/cocina-premium.webp");
+}
+
+#product-two {
+  background: url("jpg-products/cocina-contemporanea.webp");
+}
+
+#product-three {
+  background: url("jpg-products/cocina-europa.webp");
+}
+
+#product-four {
+  background: url("jpg-products/cocina-clasica.webp");
+}
+
+#product-five {
+  background: url("jpg-products/placards.webp");
+}
+
+#product-six {
+  background: url("jpg-products/vestidores.webp");
+}
+
+#product-seven {
+  background: url("jpg-products/livings.webp");
 }
 
 /* FIN SLIDER */
@@ -392,6 +432,8 @@ article.slide .data-content p {
 }
 
 /* FIN WHATSAPP */
+
+/* MEDIA QUERY */
 
 @media only screen and (min-device-width: 1025px) and (max-device-width: 5000px) {
   body {
@@ -437,6 +479,16 @@ article.slide .data-content p {
 
   #nav-menu a .items-menu img {
     display: none;
+  }
+
+  /* HOME FOTO PRINCIPAL */
+
+  #home-principal {
+    width: 100%;
+    height: 100vh;
+    background: url(img/home-principal.webp);
+    background-position: center;
+    background-size: cover;
   }
 
   /* PROFESIONALES ASOCIADOS */
@@ -498,6 +550,34 @@ article.slide .data-content p {
 
   /* SLIDE */
 
+  #product-one {
+    background: url("img/cocina-premium.webp");
+  }
+
+  #product-two {
+    background: url("img/cocina-contemporanea.webp");
+  }
+
+  #product-three {
+    background: url("img/cocina-europa.webp");
+  }
+
+  #product-four {
+    background: url("img/cocina-clasica.webp");
+  }
+
+  #product-five {
+    background: url("img/placards.webp");
+  }
+
+  #product-six {
+    background: url("img/vestidores.webp");
+  }
+
+  #product-seven {
+    background: url("img/livings.webp");
+  }
+
   section#slider {
     height: 100vh;
     box-sizing: border-box;
@@ -541,7 +621,7 @@ article.slide .data-content p {
   }
   div#btn-prev {
     position: absolute;
-    top: 50%;
+    top: 170%;
     width: 35px;
     height: 35px;
     line-height: 33px;
@@ -555,7 +635,7 @@ article.slide .data-content p {
   }
   div#btn-next {
     position: absolute;
-    top: 50%;
+    top: 170%;
     width: 35px;
     height: 35px;
     line-height: 33px;
@@ -579,6 +659,7 @@ article.slide .data-content p {
 
   .data-content {
     background: white;
+    display: block;
   }
 
   article.slide .data-content h2 {
