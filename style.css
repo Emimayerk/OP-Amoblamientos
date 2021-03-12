@@ -37,7 +37,7 @@ header {
 
 #logo-principal img {
   width: 100%;
-  border: 0.45rem solid white;
+  border: 0.15rem solid white;
   border-radius: 0.5rem;
   height: auto;
 }
@@ -453,7 +453,7 @@ article.slide .data-content p {
 
   #logo-principal img {
     width: 100%;
-    border: 0.45rem solid white;
+    border: 0.15rem solid white;
     border-radius: 0.5rem;
     height: auto;
   }
